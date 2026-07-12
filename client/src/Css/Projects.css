@@ -1,0 +1,118 @@
+.projects{
+  background-color: white;
+      margin: 2rem 3rem;
+      border-radius:12px ;
+      box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
+  
+}
+.projectHeadingContainer{
+  text-align: center;
+}
+.projectHeadingIcon{
+  font-size: 2rem;
+}
+.projectContainer{
+  display:flex;
+  flex-wrap: wrap;
+ 
+  justify-content: space-evenly;
+}
+.project{
+background-color:  #f8fafc;
+width: 33rem;
+min-height: 26rem;
+padding: 0.5rem 0.5rem;
+margin: 1.5rem 3rem;
+box-shadow:   0 16px 40px rgba(15, 23, 42, 0.08);;
+}
+.projectImage{
+ width: 100%;
+height: 14rem;
+}
+.cardHeadingContainer{
+  display: flex;
+  gap:0.8rem;
+  margin: 0.8rem 0.5rem
+}
+ .cardHeadingIcon{
+  font-size: 1.8rem;
+ }
+.cardHeadingContainer p{
+   color :#475569;
+   font-size: 0.9rem;
+   margin-top: 0.5rem;
+   line-height: 1.5rem;
+}
+.btns{
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 2rem;
+}
+
+.liveDemo{
+  color: white;
+  background-color: #0f172a;
+  
+
+}
+.githubRepo{
+  color: #0f172a;
+  background-color: white;
+   
+ 
+  border: none;
+}
+.btn{padding: 0.5rem 1.5rem;
+   box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
+   border-radius: 8px;
+   font-size: 1.2rem;
+   font-weight: 600;
+   cursor: pointer;
+}
+.btn a{
+ color: inherit;
+}
+.liveDemoIcon{
+  color:white
+}
+.technologiesUsed{
+  display:flex;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  gap:1rem;
+  margin: 1rem 2rem
+
+  
+}
+.technologiesUsed div{
+  display: flex;
+}
+.technologyIcon{
+  color: inherit;
+  margin-right:0.2rem
+}
+.reactIcon{
+    color:#61DAFB;
+}
+
+.nodeIcon{
+    color:#339933;
+}
+
+.expressIicon{
+    color:#000;
+}
+
+.mongoIcon{
+    color:#47A248;
+}
+.htmlIcon{color:#E34F26;}
+.cssIcon{
+  color:#1572B6;
+}
+.jsIcon{
+ color: #F7DF1E;
+}
+.apiIcon{
+  color:#2563EB;
+}

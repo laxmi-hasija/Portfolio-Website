@@ -1,0 +1,131 @@
+.greetings{
+  color :#475569;
+  font-size: 1.2rem;
+}
+.hero .name{
+  color : #0f172a;
+  font-size: 3rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+.introHeading{
+  color :  #1D4ED8;
+  font-size: 1.5rem;
+}
+.introDescription{
+  margin-top: 1rem;
+  color:  #475569;
+  line-height: 1.5rem;
+}
+.hero{
+  background-color: white;
+  margin : 1rem 3rem;
+  display: flex;
+  padding: 3rem;
+box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
+
+border-radius: 20px;
+min-height: 500px;
+align-items: center;
+  
+}
+
+.primary-btn {
+background-color: #0f172a;
+color: white;
+border: none;
+padding: 0.5rem 1rem;
+font-weight: 700;
+font-size: 1rem;
+border-radius: 12px;
+cursor: pointer;
+margin-right: 1rem;
+
+
+}
+.primary-btn:hover {
+  background: #2563EB;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+.secondary-btn:hover {
+  background-color: #0F172A;
+  color:white;
+  transform: translateY(-2px);
+}
+.secondary-btn{
+  background-color: white; 
+  
+  border: 2px solid  #0f172a;
+  padding: 0.5rem 1rem;
+font-weight: 700;
+font-size: 1rem;
+border-radius: 12px;
+cursor: pointer;
+}
+.primary-btn a{
+ color: #FFFFFF;
+}
+.secondary-btn a{
+  color:#0f172a
+}
+.btns a{
+text-decoration: none;
+
+}
+
+.btns{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.social-link{
+  color: #0f172a !important;
+  text-decoration: none;
+   font-size: 2rem !important ;
+   transition: transform 0.3s ease, color 0.3s ease;
+}
+.social-link:hover{
+  
+  transform: scale(1.1);
+  
+}
+.socialbtns{
+ margin-top:  2rem;
+ margin-left: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  
+ 
+}
+.image{
+  margin-left: 2rem;
+}
+.hero img{
+  height: 18rem;
+  width: 18rem;
+   box-shadow: 0 15px 35px rgba(15, 23, 42, 0.15);
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+   
+}
+.hero img:hover{
+  transform: scale(1.1);
+  
+}
+.wave {
+  display: inline-block;
+  animation: wave 2s infinite;
+  transform-origin: 70% 70%;
+  font-size: 2rem;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(14deg); }
+  30% { transform: rotate(-8deg); }
+  45% { transform: rotate(14deg); }
+  60% { transform: rotate(-4deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}

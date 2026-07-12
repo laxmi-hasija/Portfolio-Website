@@ -1,0 +1,187 @@
+.Contact{
+  color:#0f172a;
+  background-color: white;
+
+  margin: 2rem 3rem; 
+box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+border-radius: 1.5rem;
+padding: 1.2rem 2rem;
+}
+.Contact .mainHeading{
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+.Contact .mainSubheading{
+  text-align: center;
+ color: #1D4ED8;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+
+.detailsAndEnquiry{
+  display: flex;
+   
+
+  gap: 5rem;
+  margin:1.5rem 3rem;
+ justify-content: center;
+
+}
+.HeadingContainer{
+display: flex;
+align-items: center;
+gap:0.5rem;
+}
+.headingIconContainer{
+  background-color: #0f172a;
+
+border-radius: 50%;
+}
+.headingIcon{
+padding: 0.5rem;
+font-size: 3rem;
+color: #ffffff;
+}
+
+.cardSubheading{
+   color :#475569;
+  
+  
+}
+.FormCard{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap:1rem;
+  margin-bottom: 1rem;
+  
+
+ 
+}
+.form{
+  margin-top: 1rem;
+  margin-bottom:1rem
+}
+.formElement{
+  width:100%
+}
+
+
+
+
+.infocard{
+    background-color: #0f172a;
+    color: white;
+    margin-bottom: 1rem;
+    padding: 0.5rem 2rem;
+   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.10);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+   text-align: left;
+  
+}
+.contact-info{
+  flex:1;
+}
+
+.infoCardContainer{
+  margin-top: 1.5rem
+}
+
+
+
+
+.form .formElement{
+  width: 100%;
+
+}
+.FormCard .formElement label{
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.FormCard .formElement input,textarea{
+  
+  font-size: 1rem;
+ 
+  width: 100%;
+  border-radius: 12px;
+  font-family: "inter";
+  border: 2px solid #0f172a;
+
+  padding: 0.8rem 1.6rem;
+}
+.FormCard .formElement input,textarea::placeholder{
+  font-style: italic;
+ 
+}
+.sendButton{
+  color: white;
+  background-color: #0f172a;
+  border:none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+ text-align: center;
+  cursor: pointer;
+  
+}
+.FormCard textarea {
+  height: 5rem;
+}
+.contactdetails{
+  background-color: #f8fafc;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+  
+
+}
+.leftIcon{
+   font-size: 2.5rem ;
+  
+   border: 1px solid #ffffff;
+  padding: 5px;
+  border-radius: 4px;
+
+}
+.rightIcon{
+  font-size: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding : 5px;
+  border-radius: 50%;
+  margin-left : auto;
+ ;
+}
+.nameAndEmail{
+  display: flex;
+  align-items: center;
+  gap:0.5rem;
+}
+.btnContainer{
+  display: flex;
+  justify-content: center;
+}
+.externalLink{
+  color: #ffffff;
+}
+.enquiryForm{
+   background-color: #f8fafc;
+       box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+           padding: 1rem 2rem;
+           border-radius: 1rem;
+}
+
+.Contact .thanks{
+text-align: center;
+}
+.Contact .thanks p{
+
+  margin-top:0.3rem; 
+     color :#475569;
+}
+
+
