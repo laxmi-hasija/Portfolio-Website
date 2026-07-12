@@ -6,7 +6,7 @@ A modern, responsive full-stack portfolio website built using **React**, **Node.
 
 ## 🚀 Live Demo
 
-**Frontend:** https://your-portfolio.vercel.app
+**Frontend:** https://portfolio-website-plum-three-39.vercel.app/
 
 **Backend:** https://your-backend.onrender.com
 
@@ -68,7 +68,7 @@ PortfolioWebsite/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-github-username/PortfolioWebsite.git
+git clone https://github.com/laxmi-hasija/PortfolioWebsite.git
 cd PortfolioWebsite
 ```
 
