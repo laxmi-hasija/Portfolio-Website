@@ -43,10 +43,12 @@ height: 14rem;
    margin-top: 0.5rem;
    line-height: 1.5rem;
 }
-.btns{
+.projects .btns{
   display: flex;
   gap: 1rem;
   margin: 1.5rem 2rem;
+  
+
 }
 
 .liveDemo{
@@ -62,14 +64,14 @@ height: 14rem;
  
   border: none;
 }
-.btn{padding: 0.5rem 1.5rem;
+.projects .btn{padding: 0.5rem 1.5rem;
    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
    border-radius: 8px;
    font-size: 1.2rem;
    font-weight: 600;
    cursor: pointer;
 }
-.btn a{
+.projects .btn a{
  color: inherit;
 }
 .liveDemoIcon{
@@ -99,7 +101,7 @@ height: 14rem;
     color:#339933;
 }
 
-.expressIicon{
+.expressIcon{
     color:#000;
 }
 

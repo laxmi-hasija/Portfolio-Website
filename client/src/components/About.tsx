@@ -1,4 +1,4 @@
-import profilephoto from "../assets/profilephoto.png"
+import profilephoto from "../assets/aboutphoto.png"
 import { FaMapMarkerAlt, FaEnvelope, FaUser, FaCheck} from "react-icons/fa";
 
 
