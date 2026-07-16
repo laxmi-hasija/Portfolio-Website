@@ -94,15 +94,19 @@ function Hero() {
             </a>
           </div>
         </div>
-        <div className="image">
+        <div className="heroRight">
+           <div className="imageContainer">
         
-          <img src={laxmiphoto} alt="profile photo"></img>
+          <img src={laxmiphoto} alt="profile photo">
+          </img>
             <div className="floatingCard">
               <p>< HiBriefcase/></p>
             <p className="title">Open to Internships</p>
         <p className="subTitle"><GoDotFill/> Available Now</p>
           </div>
         </div>
+        </div>
+       
       </div>
     </section>
   );

@@ -36,13 +36,13 @@ max-width:14rem;
 height: 17rem;
 border-radius: 12px;
 }
-.imageContainer{
+.about .imageContainer{
   background-color:white ;
   border-radius: 10px;
  box-shadow:  0 16px 40px rgba(15, 23, 42, 0.12);
  padding: 0.8rem 1rem;
 }
-.imageContainer p{
+.about .imageContainer p{
   color:#1D4ED8;
   font-weight: 500;
   font-style: italic;

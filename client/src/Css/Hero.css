@@ -2,14 +2,18 @@
   background-color: white;
   margin: 1rem 3rem;
   display: flex;
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
   box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
-  gap: 3rem;
+justify-content: space-between;
   border-radius: 20px;
   min-height: 500px;
+
+
 }
 .hero .introduction {
-  max-width: 50rem;
+
+padding: 1rem 2rem;
+
 }
 .hero .badge {
   display: flex;
@@ -79,6 +83,7 @@
 }
 
 .hero .btn {
+  font-size: 1.2rem;
   margin: 1.5rem 1rem;
   transition: all 0.3s ease;
 }
@@ -91,7 +96,7 @@
 }
 .techStackChips {
   display: flex;
-  justify-content: space-between;
+
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -129,14 +134,16 @@
   display: flex;
   gap: 1.5rem;
 }
-.hero .image {
-  margin-left: 1rem;
- position: relative;
-
+.hero .imageContainer{
+  width: fit-content;
+  position: relative;
+  display: inline-block;
 }
+
 .hero img {
-  height: 20rem;
-  width: 20rem;
+  
+  height: 22rem;
+  width: 22rem;
   box-shadow: 0 15px 35px rgba(15, 23, 42, 0.15);
   border-radius: 50%;
   margin-top: 1.5rem;
@@ -145,7 +152,7 @@
   animation: float 5s ease-in-out infinite;
 
   transition: transform 0.4s ease;
-  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+
 }
 @keyframes float {
   0%,
@@ -156,7 +163,10 @@
     transform: translateY(-8px);
   }
 }
-
+.hero .heroRight{
+ width: fit-content;
+ margin: 0 auto;
+}
 .hero img:hover {
   transform: scale(1.1);
 }
@@ -164,16 +174,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
- width: fit-content;
+width:14rem;
   background-color: #F8FAFF;
 border: 1px solid #DBEAFE;
 
 padding: 0.5rem 0.8rem;
 border-radius: 12px;
 position: absolute;
-right:-3.5rem;
-bottom:6rem;
+    bottom: -2rem;
+    right: -3.5rem;
   animation: float 5s ease-in-out infinite;
 
 
@@ -218,4 +227,76 @@ bottom:6rem;
   100% {
     transform: rotate(0deg);
   }
+}
+@media(max-width:1440px){
+ 
+ .floatingCard{
+  padding: 0.3rem 0.5rem;
+  width:13rem;
+  right: -1.5rem;
+ }
+.hero img{
+  height: 21rem;
+  width:21rem;
+}
+.hero .name{
+  font-size: 2.5rem;
+}
+.hero .btn{
+  font-size: 1rem;
+}
+.hero .introHeading{
+  font-size: 1.4rem;
+}
+.hero {
+  padding:1rem 2rem;
+}
+}
+@media(max-width:1200px) {
+  .hero img{
+    width: 18rem;
+    height: 18rem;
+  }
+  .hero .greetings{
+    font-size: 1rem;
+  }
+  .hero .name{
+    font-size: 2rem;
+  }
+  .hero .introHeading{
+    font-size: 1.2rem;
+  }
+  .hero .introDescription{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    
+  }
+  .hero .introduction{
+    max-width: 40rem;
+    padding: 1rem 1.5rem
+  }
+  .hero .techStackChips{
+    gap:1rem;
+  }
+  .title{
+    font-size: 1rem;
+
+  }
+  .floatingCard{
+    width: 11rem;
+  }
+  .subTitle{
+    font-size: 0.8rem;
+  }
+}
+@media(max-width:992px) {
+  .hero img{
+    width:16rem;
+    height: 16rem;
+  }
+  .hero {
+    display: flex;
+    justify-content: center;
+  }
+  
 }
