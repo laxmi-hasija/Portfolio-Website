@@ -1,4 +1,6 @@
 import "../Css/Contact.css";
+import axios from "axios";
+import { useState } from "react";
 import {
   FaHeart,
   FaEnvelope,
@@ -10,11 +12,51 @@ import {
 
 import { LuUser, LuSparkles, LuHandshake  } from "react-icons/lu";
 import { HiOutlinePaperAirplane } from "react-icons/hi";
-import { FiMapPin, FiMail, FiExternalLink } from "react-icons/fi";
+import {  FiExternalLink, FiMessageCircle,  FiMapPin  } from "react-icons/fi";
+
 export default function Contact() {
+  const[formData, setFormData]= useState({
+    name:"",
+    email:"",
+    subject:"",
+    message:""
+  });
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  setFormData({
+    ...formData,
+    [e.target.name]: e.target.value,
+  });
+
+};
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  try {
+    const response = await axios.post(
+      "http://localhost:5000/api/contact",
+      formData
+    );
+
+    console.log(response.data);
+
+    alert("Message sent successfully!");
+
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+  } catch (error) {
+    console.error(error);
+    alert("Something went wrong!");
+  }
+};
   return (
     <section id="contact">
       <div className="Contact">
+        
+        <div className="headingContainer"> <h4 className="getInTouch">GET IN TOUCH<FiMessageCircle/></h4>
         <h1 className="mainHeading">Contact me</h1>
         <p className="mainSubheading">
           Let's create something amazing together&#33;
@@ -22,7 +64,7 @@ export default function Contact() {
             {" "}
             <FaHeart />{" "}
           </span>
-        </p>
+        </p></div>
         <div className="detailsAndEnquiry">
           <div className="contactdetails">
             <div className="HeadingContainer">
@@ -30,10 +72,10 @@ export default function Contact() {
                 <LuUser className="headingIcon" />
               </span>
               <div>
-                {" "}
+               
                 <h2>Let's Connect</h2>
                 <p className="cardSubheading">
-                  You can reach out to me through any of these platforms
+             Have a question or want to work together? Feel free to reach out.
                 </p>
               </div>{" "}
             </div>
@@ -48,7 +90,7 @@ export default function Contact() {
                 </span>
 
                 <span className="rightIconContainer">
-                  <FiMapPin className="rightIcon" />
+                  < FiMapPin className="rightIcon" />
                 </span>
               </div>
               <div className="infocard">
@@ -60,7 +102,8 @@ export default function Contact() {
                   <p>laxmihasija03@gmail.com</p>
                 </span>
                 <span className="rightIconContainer">
-                  <FiMail className="rightIcon" />
+                  <a  href="mailto:laxmihasija03@gmail.com" target="_blank">                  <FiExternalLink className="rightIcon" />
+</a>
                 </span>
               </div>
               <div className="infocard">
@@ -117,7 +160,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <form className="form">
+            <form className="form" onSubmit={handleSubmit}>
               <div className="FormCard">
                 <div className=" nameAndEmail">
                   <div className="formElement name">
@@ -127,6 +170,9 @@ export default function Contact() {
                       type="text"
                       placeholder="Enter your full name"
                       id="name"
+                        name="name"
+                      value={formData.name}
+  onChange={handleChange}
                     ></input>
                   </div>
 
@@ -135,6 +181,10 @@ export default function Contact() {
                     <label htmlFor="Email">Email:</label>
                     <input
                       type="email"
+                       name="email"
+
+  value={formData.email}
+  onChange={handleChange}
                       placeholder="Enter your Email"
                       id="Email"
                     ></input>
@@ -143,6 +193,10 @@ export default function Contact() {
                 <div className="formElement subject">
                   <label htmlFor="Subject">Subject:</label>
                   <input
+                    name="subject"
+
+  value={formData.subject}
+  onChange={handleChange}
                     type="text"
                     placeholder="Enter enquiry subject"
                     id="Subject"
@@ -151,13 +205,17 @@ export default function Contact() {
                 <div className="formElement message">
                   <label htmlFor="message">Message:</label>
                   <textarea
+                    name="message"
+ 
+  value={formData.message}
+  onChange={handleChange}
                     placeholder="Drop your message here"
                     id="message"
                   ></textarea>
                 </div>
               </div>
               <div className="btnContainer">
-                <button className="sendButton">
+                <button type="submit" className="sendButton">
                   Send Message <FaPaperPlane />
                 </button>
               </div>
