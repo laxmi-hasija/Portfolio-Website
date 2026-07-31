@@ -4,7 +4,8 @@ const connectDB = require("./config/db");
 const contactRoutes = require("./routes/contactRoutes");
 const cors = require("cors");
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: "https://your-portfolio.vercel.app"}));
 app.use(express.json());
 app.use("/api/contact", contactRoutes);
 const PORT = process.env.PORT;
