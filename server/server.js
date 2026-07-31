@@ -5,7 +5,8 @@ const contactRoutes = require("./routes/contactRoutes");
 const cors = require("cors");
 const app = express();
 app.use(cors({
-  origin: "https://portfolio-website-plum-three-39.vercel.app/"}));
+    origin:["https://portfolio-website-plum-three-39.vercel.app", "http://localhost:5173"]
+}));
 app.use(express.json());
 app.use("/api/contact", contactRoutes);
 const PORT = process.env.PORT;
