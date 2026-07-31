@@ -30,10 +30,12 @@ export default function Contact() {
 };
 const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
+  console.log(import.meta.env);
+console.log(import.meta.env.VITE_API_URL);
 
   try {
     const response = await axios.post(
-"https://portfolio-backend-06cf.onrender.com",
+     `${import.meta.env.VITE_API_URL}/api/contact` ,
       formData
     );
 
