@@ -1,0 +1,96 @@
+.thankYouContainer{
+  background-color:  #f8fafc;
+  text-align: center;
+}
+.thankyouCard{
+  background-color: white;
+    border: 1px solid #E2E8F0;
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 750px;
+margin: auto;
+margin-top: 2rem;
+margin-bottom: 2rem;
+min-height: 600px;
+padding: 1rem;
+}
+.subCard{
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+.subCards{
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  background-color: #EFF6FF;
+
+}
+
+.thankyouCard .icon{
+  color: #2563EB;
+
+
+}
+.subCardContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .topIcon{
+ font-size: 5rem;
+    color: #22C55E;
+    background: #DCFCE7;
+    padding: 1rem;
+    border-radius: 50%;
+    border: 2px solid #BBF7D0;
+    margin-bottom: 1rem;
+ }
+ .badge{
+  background: #DCFCE7;
+color: #166534;
+border: 1px solid #BBF7D0;
+padding: 0.6rem 1rem;
+border-radius: 999px;
+font-size: 0.9rem;
+font-weight: 600;
+display: inline-flex;
+align-items: center;
+gap: 0.5rem;
+ }
+ .description{
+  color:#475569;
+ }
+ .subCardDescription{
+  color: #64748B;
+ }
+ .quoteDescription{
+  color:#334155;
+ }
+ .quoteContainer {
+  display: flex;
+  align-items: center;
+  background-color:    #EFF6FF;;
+ }
+ .outerContainer{
+  display: flex;
+  justify-content: center;
+
+ }
+ .thankyouCard .projectBtn{
+  
+  border: none;
+  background-color: #f8fafc;
+  color:#0f172a;
+ }
+
+ .thankyouCard a{
+  text-decoration: none;
+  font-size: 1.3rem;
+ 
+ }
+ .homeBtn{
+  color: white;
+  background-color: #0f172a;
+   
+ }

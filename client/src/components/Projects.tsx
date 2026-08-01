@@ -1,5 +1,6 @@
 import "../Css/Projects.css";
 import { IoLogoJavascript, IoColorPaletteOutline } from "react-icons/io5";
+import portfolio from "../assets/PortfolioWebsiteSS.png"
 import ranomColorGenerator from "../assets/RandomColorGenerator.png";
 import weatherApp from "../assets/Weather-app.png";
 import { TbWorld } from "react-icons/tb";
@@ -17,7 +18,7 @@ import { HiArrowUpRight } from "react-icons/hi2";
 
 import { LuListTodo, LuCloudSun } from "react-icons/lu";
 import taskManager from "../assets/TaskManager.png";
-import samplephoto from "../assets/ChatGPT Image Jul 1, 2026, 01_42_17 AM.png";
+
 import { SiExpress, SiMongodb } from "react-icons/si";
 export default function Projects() {
   return (
@@ -33,7 +34,7 @@ export default function Projects() {
         <div className="projectContainer">
           <div className="project">
             <img
-              src={samplephoto}
+              src={portfolio}
               alt="Portfolio Website Image"
               className="projectImage"
             ></img>
@@ -70,7 +71,7 @@ export default function Projects() {
             </div>
             <div className="btns">
               <button className="liveDemo btn">
-                <a>
+                <a href="https://portfolio-website-plum-three-39.vercel.app/" target="_blank" rel="noopener noreferrer">
                   Live Demo
                   <HiArrowUpRight className="liveDemoIcon" />
                 </a>

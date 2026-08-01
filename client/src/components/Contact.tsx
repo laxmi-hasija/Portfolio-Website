@@ -1,6 +1,7 @@
 import "../Css/Contact.css";
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   FaHeart,
   FaEnvelope,
@@ -10,63 +11,70 @@ import {
   FaPaperPlane,
 } from "react-icons/fa";
 
-import { LuUser, LuSparkles, LuHandshake  } from "react-icons/lu";
+import { LuUser, LuSparkles, LuHandshake } from "react-icons/lu";
 import { HiOutlinePaperAirplane } from "react-icons/hi";
-import {  FiExternalLink, FiMessageCircle,  FiMapPin  } from "react-icons/fi";
+import { FiExternalLink, FiMessageCircle, FiMapPin } from "react-icons/fi";
 
 export default function Contact() {
-  const[formData, setFormData]= useState({
-    name:"",
-    email:"",
-    subject:"",
-    message:""
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-  setFormData({
-    ...formData,
-    [e.target.name]: e.target.value,
-  });
-
-};
-const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-  console.log(import.meta.env);
-console.log(import.meta.env.VITE_API_URL);
-
-  try {
-    const response = await axios.post(
-     `${import.meta.env.VITE_API_URL}/api/contact` ,
-      formData
-    );
-
-    console.log(response.data);
-
-    alert("Message sent successfully!");
-
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
+      ...formData,
+      [e.target.name]: e.target.value,
     });
-  } catch (error) {
-    console.error(error);
-    alert("Something went wrong!");
-  }
-};
+  };
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log(import.meta.env);
+    console.log(import.meta.env.VITE_API_URL);
+
+    try {
+      const response = await axios.post(
+        `${import.meta.env.VITE_API_URL}/api/contact`,
+        formData,
+      );
+
+      if (response.data.success) {
+        navigate("/thank-you");
+
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Something went wrong!");
+    }
+  };
   return (
     <section id="contact">
       <div className="Contact">
-        
-        <div className="headingContainer"> <h4 className="getInTouch">GET IN TOUCH<FiMessageCircle/></h4>
-        <h1 className="mainHeading">Contact me</h1>
-        <p className="mainSubheading">
-          Let's create something amazing together&#33;
-          <span className="heart">
-            {" "}
-            <FaHeart />{" "}
-          </span>
-        </p></div>
+        <div className="headingContainer">
+          {" "}
+          <h4 className="getInTouch">
+            GET IN TOUCH
+            <FiMessageCircle />
+          </h4>
+          <h1 className="mainHeading">Contact me</h1>
+          <p className="mainSubheading">
+            Let's create something amazing together&#33;
+            <span className="heart">
+              {" "}
+              <FaHeart />{" "}
+            </span>
+          </p>
+        </div>
         <div className="detailsAndEnquiry">
           <div className="contactdetails">
             <div className="HeadingContainer">
@@ -74,10 +82,10 @@ console.log(import.meta.env.VITE_API_URL);
                 <LuUser className="headingIcon" />
               </span>
               <div>
-               
                 <h2>Let's Connect</h2>
                 <p className="cardSubheading">
-             Have a question or want to work together? Feel free to reach out.
+                  Have a question or want to work together? Feel free to reach
+                  out.
                 </p>
               </div>{" "}
             </div>
@@ -92,7 +100,7 @@ console.log(import.meta.env.VITE_API_URL);
                 </span>
 
                 <span className="rightIconContainer">
-                  < FiMapPin className="rightIcon" />
+                  <FiMapPin className="rightIcon" />
                 </span>
               </div>
               <div className="infocard">
@@ -104,8 +112,10 @@ console.log(import.meta.env.VITE_API_URL);
                   <p>laxmihasija03@gmail.com</p>
                 </span>
                 <span className="rightIconContainer">
-                  <a  href="mailto:laxmihasija03@gmail.com" target="_blank">                  <FiExternalLink className="rightIcon" />
-</a>
+                  <a href="mailto:laxmihasija03@gmail.com" target="_blank">
+                    {" "}
+                    <FiExternalLink className="rightIcon" />
+                  </a>
                 </span>
               </div>
               <div className="infocard">
@@ -172,9 +182,9 @@ console.log(import.meta.env.VITE_API_URL);
                       type="text"
                       placeholder="Enter your full name"
                       id="name"
-                        name="name"
+                      name="name"
                       value={formData.name}
-  onChange={handleChange}
+                      onChange={handleChange}
                     ></input>
                   </div>
 
@@ -183,10 +193,9 @@ console.log(import.meta.env.VITE_API_URL);
                     <label htmlFor="Email">Email:</label>
                     <input
                       type="email"
-                       name="email"
-
-  value={formData.email}
-  onChange={handleChange}
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
                       placeholder="Enter your Email"
                       id="Email"
                     ></input>
@@ -196,9 +205,8 @@ console.log(import.meta.env.VITE_API_URL);
                   <label htmlFor="Subject">Subject:</label>
                   <input
                     name="subject"
-
-  value={formData.subject}
-  onChange={handleChange}
+                    value={formData.subject}
+                    onChange={handleChange}
                     type="text"
                     placeholder="Enter enquiry subject"
                     id="Subject"
@@ -208,9 +216,8 @@ console.log(import.meta.env.VITE_API_URL);
                   <label htmlFor="message">Message:</label>
                   <textarea
                     name="message"
- 
-  value={formData.message}
-  onChange={handleChange}
+                    value={formData.message}
+                    onChange={handleChange}
                     placeholder="Drop your message here"
                     id="message"
                   ></textarea>
@@ -225,8 +232,14 @@ console.log(import.meta.env.VITE_API_URL);
           </div>
         </div>
         <div className="thanks">
-          <h3>Thanks for Visiting my Portfolio <LuSparkles className="sparkleIcon"/></h3>
-        <p>I'm always open to new opportunities, collaborations, and meaningful projects <LuHandshake/></p>
+          <h3>
+            Thanks for Visiting my Portfolio{" "}
+            <LuSparkles className="sparkleIcon" />
+          </h3>
+          <p>
+            I'm always open to new opportunities, collaborations, and meaningful
+            projects <LuHandshake />
+          </p>
         </div>
       </div>
     </section>
