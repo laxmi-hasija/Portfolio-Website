@@ -66,10 +66,10 @@ position: relative;
 }
 .education .card {
   background-color: #f8fafc;
-  width:100%;
+  width:75%;
  z-index: 2;
   border: 1px solid #e2e8f0;
-  border-left : 0.5rem solid #0f172a;
+  border-left : 4px solid #0f172a;
   border-radius: 16px;
   padding: 1rem 1.25rem;
   box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
@@ -98,7 +98,7 @@ position: relative;
 }
 .education .badge {
   color: white;
-  background-color: #1d4ed8;
+  background-color: #0f172a;
   padding: 0.25rem 0.4rem;
   border-radius: 999px;
   border: none;
@@ -144,7 +144,7 @@ flex-wrap:wrap;
 .supportingDetail .icon{
 background-color:#eff6ff;
 
-color: #2563eb;
+color: #0f172a;
 }
 .supportingDetail div{
   display: flex;
@@ -201,7 +201,7 @@ color:white;
 
     background-color: white;
 
-    border-left:3px solid #2563eb;;
+    border-left:3px solid #0f172a;
  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.05);
     border-radius:12px;
     gap: 0.5rem;
@@ -215,14 +215,14 @@ color:white;
 .education .list .highlightHeading{
   font-size: 1rem;
   font-weight: 500;
-  color:#2563eb;
+  color: #0f172a;
   margin:0.3rem;
   border: none;
 }
 .education .xiiHighlightHeading{
    font-size: 1rem;
   font-weight: 500;
-  color:#2563eb;
+  color: #0f172a;
     margin:0.3rem;
 }
 .education .xiiList{

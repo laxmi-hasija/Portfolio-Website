@@ -1,81 +1,118 @@
-import profilephoto from "../assets/aboutphoto.png"
-import { FaMapMarkerAlt, FaEnvelope, FaUser, FaCheck} from "react-icons/fa";
+import profilephoto from "../assets/sampleprofilephoto.avif";
+import { FaMapMarkerAlt, FaEnvelope, FaUser, FaCheck, FaLaptopCode } from "react-icons/fa";
+import { RiReactjsLine } from "react-icons/ri";
+import { TbApi } from "react-icons/tb";
+import { LuBrainCircuit } from "react-icons/lu";
 
 
 import "../Css/About.css";
+import { FaBriefcase } from "react-icons/fa6";
+import { HiArrowDownTray } from "react-icons/hi2";
 
 export default function Aboutme() {
   return (
-    <section id="about"><div className="about">
-      <div className="headingContainer">
-        {" "}
-        <h1>About Me<FaUser/></h1>
-        <p>
-          A MERN Stack Developer passionate about building modern web
-          applications.
-        </p>
-      </div>
-      <div className="profileImageAndInfo">
-        <div className="imageSection">
+    <section id="about">
+      <div className="about">
+        <div className="headingContainer">
           {" "}
-         <div className="imageContainer">
-          <img src={profilephoto} alt="profilephoto" className="profilePhoto"></img>
-          <h3>Laxmi</h3>
-           <p>MERN Stack Developer </p></div>
-        <div className="imageDetails">
-       
-       <div className="iconandDetailContainer"> <FaMapMarkerAlt className="icon"/>  <p>Sonipat,Haryana</p></div> 
-     <div className="iconandDetailContainer"><FaEnvelope className="icon"/>   <p>laxmihasija03@gmail.com</p></div>    </div> 
+          <h1>
+            About Me
+         
+          </h1>
+       <p>Get to know me better</p>
         </div>
+        <div className="profileImageAndInfo">
+          <div className="leftCard">
+            {" "}
+            <div className="imageContainer">
+              <img
+                src={profilephoto}
+                alt="profilephoto"
+                className="profilePhoto"
+              ></img>
+              <h3>Laxmi</h3>
+              <p>MERN Stack Developer </p>
+            </div>
+            <div className="imageDetails">
+              <div className="iconandDetailContainer">
+                {" "}
+                <FaMapMarkerAlt className="icon" /> <p>Sonipat,Haryana</p>
+              </div>
+              <div className="iconandDetailContainer">
+                <FaEnvelope className="icon" /> <p>laxmihasija03@gmail.com</p>
+              </div>
+              <div className="iconandDetailContainer ">
+                <FaBriefcase className="icon"/> <p>Available for Internships</p>
 
-        <div className="aboutInfo">
-          <h2>Hello, I'm Laxmi&nbsp;👋</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis,
-            eveniet. Quisquam officiis expedita eveniet magnam nobis quas
-            mollitia impedit, earum accusamus, molestiae neque vero animi beatae
-            cum ea. Deserunt, aut.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            eos facere nihil atque possimus quisquam ducimus officia itaque
-            mollitia vero quas nulla dolorem unde praesentium laboriosam, culpa
-            ipsum alias eaque.
-          </p>
-          <hr></hr>
-          <ul>
-            <li> <li><FaCheck className="checkIcon"/><p>MERN Stack Developer</p></li>
-            <li><FaCheck className="checkIcon"/><p>Open Source Lead At DCRUSTODC</p></li></li>
-           <li>
-           <li><FaCheck className="checkIcon"/><p>Responsive Design</p></li>
-            <li><FaCheck className="checkIcon"/><p>Clean and Scalable Code</p></li> </li>
-          </ul>{" "}
+              </div>
+                <button className="resumeBtn btn">
+                            <a href="/laxmi_resume.pdf">Download Resume<HiArrowDownTray className="btnIcon"/></a>
+                          </button>
+            </div>
+          </div>
+
+          <div className="rightCard">
+          
+            <h2>Hello, I'm Laxmi&nbsp;👋</h2>
+            <p>
+           I'm a B.Tech Computer Science student at DCRUST Murthal (CGPA: 7.80) with a passion for building responsive, scalable, and user-friendly web applications using the MERN stack. I enjoy transforming ideas into real-world projects while continuously improving my problem-solving and development skills.
+            </p>
+            <p>
+
+          I'm currently focused on strengthening my frontend and
+              backend development skills and am looking for internship
+              opportunities where I can contribute, learn, and grow as a
+              software developer.
+            </p>
+            <hr></hr>
+            <ul>
+              <li>
+                {" "}
+                <li>
+                  <FaCheck className="checkIcon" />
+                  <p>MERN Stack Developer</p>
+                </li>
+                <li>
+                  <FaCheck className="checkIcon" />
+                  <p>Open Source Lead At DCRUSTODC</p>
+                </li>
+              </li>
+              <li>
+                <li>
+                  <FaCheck className="checkIcon" />
+                  <p>Responsive Design</p>
+                </li>
+                <li>
+                  <FaCheck className="checkIcon" />
+                  <p>Clean and Scalable Code</p>
+                </li>{" "}
+              </li>
+            </ul>{" "}
+          </div>
+        </div>
+        <div className="cards">
+          <div className="Card">
+            <span><FaLaptopCode className="bottomcardIcon"/></span>
+            <h4>MERN Developer</h4>
+            <p>Full-stack web apps</p>
+          </div>
+          <div className="Card">
+            <span><RiReactjsLine className="bottomcardIcon"/></span>
+            <h4>React.js</h4>
+            <p>Modern UI development</p>
+          </div>
+          <div className="Card">
+            <span><TbApi className="bottomcardIcon"/></span>
+            <h4>REST APIs</h4>
+            <p>Backend Integration</p>
+          </div>
+          <div className="Card">
+            <span><LuBrainCircuit className="bottomcardIcon"/></span>
+            <h4>Continuous learning</h4>
+            <p>Growing Everyday</p>
+          </div>
         </div>
       </div>
-      <div className="cards">
-        <div className="Card">
-          <span>Emoji</span>
-          <h4>MERN Developer</h4>
-          <p>mern stck devellopment</p>
-        </div>
-        <div className="Card">
-          <span>Emoji</span>
-          <h4> Open Source Lead at DcrustOdc</h4>
-          <p>mern stck devellopment</p>
-        </div>
-        <div className="Card">
-          <span>Emoji</span>
-          <h4>Responsive Design</h4>
-          <p>mern stck devellopment</p>
-        </div>
-        <div className="Card">
-          <span>Emoji</span>
-          <h4>Continuos learning</h4>
-          <p>mern stck devellopment</p>
-        </div>
-      </div>
-    </div>
-      
     </section>
   );
 }

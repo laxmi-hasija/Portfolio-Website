@@ -24,7 +24,7 @@ function Home() {
       <Projects />
       <Contact />
       <Footer />
-      <ThankYou/>
+   
     </>
   );
 }

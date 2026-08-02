@@ -3,15 +3,20 @@
  color:#0f172a;
   box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
   margin:1.5rem 3rem ;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
 }
 .about .headingContainer{
   text-align: center;
 
 }
 .about .headingContainer p{
- color: #1D4ED8;
+color: #64748B;
  font-size: 1.2rem;
  font-weight: 500;
+    max-width:650px;
+    margin:0 auto;
+    line-height:1.8;
 }
 .profileImageAndInfo{
   display:flex;
@@ -19,17 +24,18 @@
   gap:5rem;
   padding: 2rem 4rem
 }
-.imageSection{
+.leftCard{
   width:35%;
 background-color: #f8fafc ;
-border: 1px solid #F1F5F9;
+
 padding: 1.5rem 2rem;
 box-shadow:0 6px 16px rgba(15, 23, 42, 0.06);
 border-radius: 12px;
 display: flex;
 flex-direction: column;
 gap: 0.8rem;
-border-top:  solid #0F172A
+border: 1px solid #E2E8F0;
+
 }
 .about .profilePhoto{
 max-width:14rem;
@@ -57,49 +63,81 @@ border-radius: 12px;
   gap: 0.8rem;
 }
 .imageDetails .icon{
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .iconandDetailContainer{
   display: flex;
   gap: 0.3rem;
 
 }
-.aboutInfo{
-  background-color: #f8fafc;
-padding : 1rem 2rem;
-   box-shadow:  0 16px 40px rgba(15, 23, 42, 0.08);
+.resumeBtn{
+  background-color: #0f172a;
+  color: white;
+  border: none;
+
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-right: 1rem;
+  padding:0.5rem 0rem;
 }
-.aboutInfo h2{
+.resumeBtn a{
+  color: white;
+
+}
+.rightCard{
+  background-color: #f8fafc;
+padding : 3rem;
+   box-shadow:  0 16px 40px rgba(15, 23, 42, 0.08);
+   border: 1px solid #E2E8F0;
+border-radius: 24px;
+}
+.rightCard h2{
   margin-bottom: 1rem;
 }
-.aboutInfo p{
+.rightCard p{
   color:#475569;
   margin-bottom: 0.5rem;
   line-height: 1.7rem;
 }
-.aboutInfo ul{
+.rightCard ul{
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 3rem;
   margin-top: 1.5rem;
 }
-.aboutInfo ul li li .checkIcon{
+.rightCard ul li li .checkIcon{
   font-size: 1.5rem;
   margin-right: 1rem;
+  color: green;
 }
-.aboutInfo ul li li p{
- color: #1D4ED8;
+.rightCard ul li li p{
+color: #0F172A;
 font-weight: 500;
 
 }
-.aboutInfo ul li{
+.rightCard ul li{
   display: flex;
   flex-direction: column;
+  background:#F8FAFC;
+padding:0.5rem;
+border-radius:14px;
 }
-.aboutInfo ul li li {
-  display: flex;
-  flex-direction: row;
+.rightCard ul li li {
+
+flex-direction: row;
+      display:inline-flex;
+    align-items:center;
+    gap:0.5rem;
+    padding:.8rem 1rem;
+    border-radius:12px;
+    background:#F8FAFC;
+    border:1px solid #E2E8F0;
+    color:#0F172A;
+    font-weight:600;
+
 }
 .about hr{
   height: 2px;
@@ -117,4 +155,11 @@ font-weight: 500;
   color: white;
   padding: 0.8rem 1.6rem;
   border-radius: 15px;
+}
+.highlight{
+color:#2563EB;
+font-weight:600;
+}
+.about .bottomcardIcon{
+ font-size: 2rem;
 }

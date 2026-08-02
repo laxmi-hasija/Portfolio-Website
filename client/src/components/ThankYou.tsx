@@ -21,8 +21,8 @@ function ThankYou() {
         <p >I appreciate you taking the time to connect.</p>
 
         <p >I'll review your message and get back to you as soon as possible.</p></div>
-      
-        <div className="subCardContainer">
+       <div className="outerContainer">
+         <div className="subCardContainer">
    <div className="subCards">
           <div className="subCard responseTime">
             <FiClock className="clockIcon icon" />
@@ -41,7 +41,7 @@ function ThankYou() {
         </div>
        
         </div>
-        <div className="outerContainer"> <div className="quoteContainer">
+      <div className="quoteContainer">
       
          <FaQuoteLeft className="quote-icon" />
       <div className="quote"> 
@@ -51,11 +51,13 @@ function ThankYou() {
           <p className="quoteDescription">&mdash; Let&apos;s build something amazing together&#33;</p>
 
       
-      </div></div>
+      </div>
     
      
          
         </div>
+       </div>
+       
         <div className="btns">
         
             <Link to="/" className="homeBtn">

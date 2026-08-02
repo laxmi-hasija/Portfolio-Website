@@ -168,3 +168,14 @@ textarea::placeholder {
   margin-top: 0.3rem;
   color: #475569;
 }
+@media(max-width:768px){
+  .detailsAndEnquiry{
+   
+    flex-direction: column;
+  }
+}
+@media(max-width:1256px) {
+  .nameAndEmail{
+    flex-direction: column;
+  }
+}
