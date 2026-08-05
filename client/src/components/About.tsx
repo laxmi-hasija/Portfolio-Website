@@ -1,5 +1,5 @@
-import profilephoto from "../assets/sampleprofilephoto.avif";
-import { FaMapMarkerAlt, FaEnvelope, FaUser, FaCheck, FaLaptopCode } from "react-icons/fa";
+import profilephoto from "../assets/aboutphoto.png";
+import { FaMapMarkerAlt, FaEnvelope,  FaCheck, FaLaptopCode } from "react-icons/fa";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbApi } from "react-icons/tb";
 import { LuBrainCircuit } from "react-icons/lu";

@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <section className="outerbox">
+    <section className="navbarOuterContainer">
       <nav className="navbar">
         <div className="logo">Laxmi</div>
       

@@ -21,8 +21,8 @@ color: #64748B;
 .profileImageAndInfo{
   display:flex;
   width: 100%;
-  gap:5rem;
-  padding: 2rem 4rem
+  gap:4rem;
+  padding: 1.5rem 3rem
 }
 .leftCard{
   width:35%;
@@ -162,4 +162,7 @@ font-weight:600;
 }
 .about .bottomcardIcon{
  font-size: 2rem;
+}
+@media(max-width:768px){
+  
 }

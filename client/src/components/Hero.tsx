@@ -35,12 +35,11 @@ function Hero() {
           Passionate MERN Stack Developer building responsive and scalable web applications. I enjoy creating clean user experiences, solving real-world problems, and continuously learning modern technologies.
           </p>
           <div className="btns">
-            <button className="primary-btn btn">
-              <a href="#contact">Get in Touch<HiArrowRight className="btnIcon"/></a>
-            </button>
-            <button className="secondary-btn btn">
-              <a href="/laxmi_resume.pdf">Download CV<HiArrowDownTray className="btnIcon"/></a>
-            </button>
+        
+              <a href="#contact" className="primaryBtn btn">Get in Touch<HiArrowRight className="btnIcon"/></a>
+      
+              <a href="/laxmi_resume.pdf" className="secondaryBtn btn">Download CV<HiArrowDownTray className="btnIcon"/></a>
+         
           </div>
           <div className="techStackChips">
             <p className="chip">

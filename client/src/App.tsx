@@ -15,7 +15,7 @@ import { Routes, Route } from "react-router-dom";
 
 function Home() {
   return (
-    <>
+    <div className="container">
       <Navbar />
       <Hero />
       <Aboutme />
@@ -25,7 +25,7 @@ function Home() {
       <Contact />
       <Footer />
    
-    </>
+    </div>
   );
 }
 
