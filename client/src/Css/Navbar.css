@@ -9,7 +9,7 @@
   position: sticky;
   top: 0;
  width:90%;
-
+ z-index:1000;
  margin: 1.5rem auto;
  
   background-color: #0f172a;

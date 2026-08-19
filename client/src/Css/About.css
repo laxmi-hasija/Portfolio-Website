@@ -22,7 +22,11 @@ color: #64748B;
   display:flex;
   width: 100%;
   gap:4rem;
-  padding: 1.5rem 3rem
+  padding: 1.5rem 3rem;
+
+}
+.profilePhoto{
+  min-width: 250px;
 }
 .leftCard{
   width:35%;
@@ -33,7 +37,7 @@ box-shadow:0 6px 16px rgba(15, 23, 42, 0.06);
 border-radius: 12px;
 display: flex;
 flex-direction: column;
-gap: 0.8rem;
+
 border: 1px solid #E2E8F0;
 
 }
@@ -53,17 +57,22 @@ border-radius: 12px;
   font-weight: 500;
   font-style: italic;
 }
-.imageContainer h3{
-  font-weight: 600;
+
+.profileDetails{
+   color: #475569;
+   display: flex;
+   flex-direction: column;
+   gap: 0.75rem;
+   margin:1rem 0rem;
 }
-.imageDetails{
-  color:#475569;
+.nameAndRole{
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  margin: 1rem 0rem 0.25rem;
+  gap:0.3rem;
 }
-.imageDetails .icon{
-  font-size: 1rem;
+.role{
+  color: #334155;
 }
 .iconandDetailContainer{
   display: flex;
@@ -74,21 +83,23 @@ border-radius: 12px;
   background-color: #0f172a;
   color: white;
   border: none;
-
+ text-decoration: none;
   font-weight: 700;
   font-size: 1rem;
   border-radius: 12px;
   cursor: pointer;
   margin-right: 1rem;
-  padding:0.5rem 0rem;
+ width: 100%;
+  padding:0.75rem 1.5rem;
+  display: inline-flex;
+  justify-content: center;
+  gap:0.2rem;
+  align-items: center;
 }
-.resumeBtn a{
-  color: white;
 
-}
 .rightCard{
   background-color: #f8fafc;
-padding : 3rem;
+padding : 2rem 2.5rem;
    box-shadow:  0 16px 40px rgba(15, 23, 42, 0.08);
    border: 1px solid #E2E8F0;
 border-radius: 24px;
@@ -101,54 +112,66 @@ border-radius: 24px;
   margin-bottom: 0.5rem;
   line-height: 1.7rem;
 }
-.rightCard ul{
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  margin-top: 1.5rem;
-}
-.rightCard ul li li .checkIcon{
-  font-size: 1.5rem;
-  margin-right: 1rem;
-  color: green;
-}
-.rightCard ul li li p{
-color: #0F172A;
-font-weight: 500;
 
-}
-.rightCard ul li{
-  display: flex;
-  flex-direction: column;
-  background:#F8FAFC;
-padding:0.5rem;
-border-radius:14px;
-}
-.rightCard ul li li {
-
-flex-direction: row;
-      display:inline-flex;
-    align-items:center;
-    gap:0.5rem;
-    padding:.8rem 1rem;
-    border-radius:12px;
-    background:#F8FAFC;
-    border:1px solid #E2E8F0;
-    color:#0F172A;
-    font-weight:600;
-
-}
 .about hr{
   height: 2px;
   border: none;
  background-color: #E2E8F0;
 }
-.cards{
+.bottomcards{
   display: flex;
   flex-direction: row;
   gap: 1rem;
   justify-content: space-around;
+}
+.gridContainer{
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem;
+}
+.about .grid{
+  display: inline-grid;
+  grid-template-columns: repeat(2,1fr) ;
+  grid-template-rows: repeat(2,1fr);
+  
+  gap:1.5rem;
+
+
+}
+.innerCard{
+  display:flex;
+  
+  align-items: baseline;
+    background: #ffffff;
+
+  padding: 14px 20px;
+  min-width: 250px;
+gap:0.5rem;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  color: #0f172a;
+  font-size: 16px;
+  font-weight: 500;
+
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
+
+  transition: 0.25s ease;
+  
+}
+.innerCard p{
+  color:#0F172A;
+}
+.innerCard:hover{
+   
+  border-color: #0f172a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.1);
+}
+
+.checkIcon{
+  color:green;
 }
 .about .Card{
   background-color: #0F172A;
@@ -163,6 +186,18 @@ font-weight:600;
 .about .bottomcardIcon{
  font-size: 2rem;
 }
-@media(max-width:768px){
+@media(max-width:1250px){
+  .profileImageAndInfo{
+    gap:3rem;
+    padding:1.5rem 2rem;
+  }
+  .innerCard{
+    padding:12px 22px;
+  }
   
+}
+@media(max-width:1200px){
+ .profileImageAndInfo{
+  padding:1rem 1.5rem;
+ }
 }

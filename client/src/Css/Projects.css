@@ -3,6 +3,8 @@
       margin: 2rem 3rem;
       border-radius:12px ;
       box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
+      padding: 1rem 1.5rem;
+      
   
 }
 .projectHeadingContainer{
@@ -10,6 +12,12 @@
 }
 .projectHeadingIcon{
   font-size: 2rem;
+}
+.project .subHeading{
+  color: #1d4ed8;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
 }
 .projectContainer{
   display:flex;
@@ -117,4 +125,13 @@ height: 14rem;
 }
 .apiIcon{
   color:#2563EB;
+}
+@media(max-width:1400px) {
+  .project{
+    margin: 1rem 2rem;
+    width:30rem;
+  }
+  .projects .btn{
+    font-size: 1rem;
+  }
 }

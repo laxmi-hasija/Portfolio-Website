@@ -26,8 +26,8 @@ export default function Projects() {
       <div className="projects">
         <div className="projectHeadingContainer">
           <FaFolderOpen className="projectHeadingIcon" />
-          <h1>Projects</h1>
-          <p>
+          <h1 className="Heading">Projects</h1>
+          <p className="subHeading">
             Here are some of the projects I have built using modern technologies
           </p>
         </div>
@@ -70,14 +70,14 @@ export default function Projects() {
               </div>
             </div>
             <div className="btns">
-              <button className="liveDemo btn">
-                <a href="https://portfolio-website-plum-three-39.vercel.app/" target="_blank" rel="noopener noreferrer">
+              
+                <a href="https://portfolio-website-plum-three-39.vercel.app/" className="liveDemo btn" target="_blank" rel="noopener noreferrer">
                   Live Demo
                   <HiArrowUpRight className="liveDemoIcon" />
                 </a>
-              </button>
-              <button className="githubRepo btn">
-                <a
+             
+
+                <a className="githubRepo btn"
                   href="https://github.com/laxmi-hasija/Portfolio-Website"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -85,7 +85,7 @@ export default function Projects() {
                   Github Repo
                   <FaGithub className="githubIcon" />
                 </a>
-              </button>
+              
             </div>
           </div>
           <div className="project">
@@ -124,8 +124,7 @@ export default function Projects() {
               </div>
             </div>
             <div className="btns">
-              <button className="liveDemo btn">
-                <a
+                      <a className="liveDemo btn"
                   href="https://task-manager-01-mu.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -133,9 +132,9 @@ export default function Projects() {
                   Live Demo
                   <HiArrowUpRight className="liveDemoIcon" />
                 </a>
-              </button>
-              <button className="githubRepo btn">
-                <a
+              
+            
+                <a className="githubRepo btn"
                   href="https://github.com/laxmi-hasija/Task-Manager"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -143,7 +142,7 @@ export default function Projects() {
                   Github Repo
                   <FaGithub className="githubIcon" />
                 </a>
-              </button>
+            
             </div>
           </div>
           <div className="project">
@@ -185,8 +184,8 @@ export default function Projects() {
               </div>
             </div>
             <div className="btns">
-              <button className="liveDemo btn">
-                <a
+              
+                <a  className="liveDemo btn"
                   href="https://weather-app-j6kd.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -194,9 +193,9 @@ export default function Projects() {
                   Live Demo
                   <HiArrowUpRight className="liveDemoIcon" />
                 </a>
-              </button>
-              <button className="githubRepo btn">
-                <a
+            
+              
+                <a className="githubRepo btn"
                   href="https://github.com/laxmi-hasija/Weather-App"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -204,7 +203,7 @@ export default function Projects() {
                   Github Repo
                   <FaGithub className="githubIcon" />
                 </a>
-              </button>
+            
             </div>
           </div>
           <div className="project">
@@ -242,8 +241,8 @@ export default function Projects() {
               </div>
             </div>
             <div className="btns">
-              <button className="liveDemo btn">
-                <a
+
+                <a  className="liveDemo btn"
                   href="https://random-color-generator-rouge-mu.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -251,9 +250,9 @@ export default function Projects() {
                   Live Demo
                   <HiArrowUpRight className="liveDemoIcon" />
                 </a>
-              </button>
-              <button className="githubRepo btn">
-                <a
+              
+              
+                <a className="githubRepo btn"
                   href="https://github.com/laxmi-hasija/random-color-generator"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -261,7 +260,7 @@ export default function Projects() {
                   Github Repo
                   <FaGithub className="githubIcon" />
                 </a>
-              </button>
+              
             </div>
           </div>
         </div>

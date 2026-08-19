@@ -48,7 +48,7 @@ padding: 1rem 2rem;
   margin-top: 1rem;
   color: #475569;
   line-height: 1.5rem;
-
+ max-width: 45rem;
 }
 
 .primaryBtn {

@@ -1,38 +1,18 @@
 
 
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Aboutme from "./components/About";
-import Contact from "./components/Contact";
-import Education from "./components/Education";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import ThankYou from "./components/ThankYou";
+import Home from "./pages/Home";
+
+import ThankYou from "./pages/ThankYou";
 
 import { Routes, Route } from "react-router-dom";
 
-function Home() {
-  return (
-    <div className="container">
-      <Navbar />
-      <Hero />
-      <Aboutme />
-      <Skills />
-      <Education />
-      <Projects />
-      <Contact />
-      <Footer />
-   
-    </div>
-  );
-}
+
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path='/' element={<Home/>}/>
       <Route path="/thank-you" element={<ThankYou />} />
     </Routes>
   );

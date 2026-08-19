@@ -127,6 +127,7 @@ textarea::placeholder {
   padding: 1rem 2rem;
   border-radius: 1rem;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+  flex:1;
 }
 .leftIcon {
   font-size: 2rem;
@@ -159,6 +160,7 @@ textarea::placeholder {
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
   padding: 1rem 2rem;
   border-radius: 1rem;
+  flex:1;
 }
 
 .Contact .thanks {
@@ -168,14 +170,38 @@ textarea::placeholder {
   margin-top: 0.3rem;
   color: #475569;
 }
-@media(max-width:768px){
+@media(max-width:950px){
   .detailsAndEnquiry{
    
     flex-direction: column;
   }
+@media(max-width: 590px){
+  .Contact{
+    width: 100%;
+  }
+}
+  
 }
 @media(max-width:1256px) {
   .nameAndEmail{
     flex-direction: column;
+  }
+  .detailsAndEnquiry{
+  gap:4rem;
+  flex-wrap: wrap;
+  }
+}
+@media(max-width:1177px) {
+  .detailsAndEnquiry{
+    gap:3rem;
+    margin:1rem 2rem;
+  }
+}
+@media(max-width:1024px){
+  .detailsAndEnquiry{
+    align-items: stretch;
+  }
+  .iconContainer{
+    display: none;
   }
 }
