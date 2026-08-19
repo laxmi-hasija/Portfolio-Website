@@ -174,13 +174,25 @@ textarea::placeholder {
   .detailsAndEnquiry{
    
     flex-direction: column;
-  }
+  }}
 @media(max-width: 590px){
   .Contact{
     width: 100%;
   }
 }
   
+@media(max-width: 490px){
+.Contact{
+  margin: 0.5rem 1rem;
+  padding: 0.5rem;
+}
+.cardSubheading{
+  display: none;
+}
+.contact-info p{
+  display: none;
+}
+
 }
 @media(max-width:1256px) {
   .nameAndEmail{

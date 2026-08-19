@@ -135,3 +135,25 @@ height: 14rem;
     font-size: 1rem;
   }
 }
+@media(max-width:786px){
+  .projects{
+    width: 100%;
+  }
+}
+@media(max-width:495px){
+  .project{
+    max-width:495px;
+  }
+}
+@media(max-width:320px){
+  .project{max-width: 320px;
+  margin:0}
+  .Contact{
+    margin:0;
+    padding:0;
+  }
+  .btns{
+    gap:0.5rem;
+    margin:1rem;
+  }
+}
