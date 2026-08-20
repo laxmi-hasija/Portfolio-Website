@@ -170,56 +170,65 @@ textarea::placeholder {
   margin-top: 0.3rem;
   color: #475569;
 }
-@media(max-width:950px){
-  .detailsAndEnquiry{
-   
+@media (max-width: 950px) {
+  .detailsAndEnquiry {
     flex-direction: column;
-  }}
-@media(max-width: 590px){
-  .Contact{
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 787px) {
+  .Contact {
+    width: auto;
+    max-width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .detailsAndEnquiry {
+    width: auto;
+    margin: 1rem 0;
+    gap: 1.5rem;
+  }
+
+  .contactdetails,
+  .enquiryForm {
+    width: 100%;
+    flex: none;
+  }
+
+  .FormCard {
+    width: 100%;
+  }
+
+  .formElement {
     width: 100%;
   }
 }
-  
-@media(max-width: 490px){
-.Contact{
-  margin: 0.5rem 1rem;
-  padding: 0.5rem;
-}
-.cardSubheading{
-  display: none;
-}
-.contact-info p{
-  display: none;
-}
-.Contact .mainSubheading{
+
+@media (max-width: 490px) {
+  .Contact {
+    margin: 0.75rem 1rem;
+    padding: 0.75rem;
+  }
+
+  .detailsAndEnquiry {
+    width: auto;
+    margin: 1rem 0;
+    gap: 1rem;
+  }
+
+  .cardSubheading,
+  .contact-info p {
+    display: none;
+  }
+
+  .Contact .mainSubheading {
     font-size: 1rem;
   }
-.FormCard .formElement input,
-textarea {
-  font-size:0.7rem;
-}
-}
-@media(max-width:1256px) {
-  .nameAndEmail{
-    flex-direction: column;
-  }
-  .detailsAndEnquiry{
-  gap:4rem;
-  flex-wrap: wrap;
-  }
-}
-@media(max-width:1177px) {
-  .detailsAndEnquiry{
-    gap:3rem;
-    margin:1rem 2rem;
-  }
-}
-@media(max-width:1024px){
-  .detailsAndEnquiry{
-    align-items: stretch;
-  }
-  .iconContainer{
-    display: none;
+
+  .FormCard .formElement input,
+  .FormCard .formElement textarea {
+    font-size: 0.7rem;
   }
 }

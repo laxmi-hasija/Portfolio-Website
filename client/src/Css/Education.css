@@ -257,16 +257,66 @@ color:white;
 .computerscience{
   color: #1e293b;
 font-size: 1.3rem;}
-@media(max-width:979px){
-.timeline::before{
-  display: none;
-}
-.timelineDot{
-  display: none;
-}
-}
-@media(max-width:872px){
-  .highlightSection{
+@media (max-width: 979px) {
+  .timeline {
+    width: 100%;
+  }
+
+  .timeline::before {
     display: none;
+  }
+
+  .timelineDot {
+    display: none;
+  }
+
+  .item {
+    gap: 0;
+  }
+
+  .education .card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 872px) {
+  .education .highlightSection {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .education {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .educationHeadingContainer {
+    margin: 0.5rem 0 1rem;
+  }
+
+  .education .card {
+    padding: 1rem;
+  }
+
+  .education .card .headingSection {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .supportingDetails {
+    gap: 0.5rem;
+  }
+
+  .supportingDetail {
+    padding: 0.5rem 0.7rem;
+  }
+
+  .education .courses {
+    gap: 0.5rem;
+  }
+
+  .education .course {
+    min-width: 120px;
   }
 }
