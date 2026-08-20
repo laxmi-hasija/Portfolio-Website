@@ -323,3 +323,12 @@ font-size: 1.3rem;}
     min-width: 120px;
   }
 }
+@media(max-width:426px)
+{
+ .bottomSection .courseSection{
+    display: none;
+  }
+  .supportingDetail{
+    font-size: 0.8rem;
+  }
+}

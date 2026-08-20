@@ -170,14 +170,16 @@ textarea::placeholder {
   margin-top: 0.3rem;
   color: #475569;
 }
-@media (max-width: 950px) {
-  .detailsAndEnquiry {
+@media(max-width:1181px){
+  .nameAndEmail{
     flex-direction: column;
-    gap: 2rem;
+  }
+  .detailsAndEnquiry{
+    gap:3rem;
+    margin:1.5rem 1rem;
   }
 }
-
-@media (max-width: 787px) {
+@media (max-width: 1025px) {
   .Contact {
     width: auto;
     max-width: 100%;
@@ -189,8 +191,12 @@ textarea::placeholder {
     width: auto;
     margin: 1rem 0;
     gap: 1.5rem;
+      flex-direction: column;
+    gap: 2rem;
   }
-
+.nameAndEmail{
+  flex-direction: row;
+}
   .contactdetails,
   .enquiryForm {
     width: 100%;
@@ -217,7 +223,9 @@ textarea::placeholder {
     margin: 1rem 0;
     gap: 1rem;
   }
-
+.nameAndEmail{
+  flex-direction: column;
+}
   .cardSubheading,
   .contact-info p {
     display: none;

@@ -16,6 +16,7 @@ import { HiOutlinePaperAirplane } from "react-icons/hi";
 import { FiExternalLink, FiMessageCircle, FiMapPin } from "react-icons/fi";
 
 export default function Contact() {
+
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
@@ -23,6 +24,7 @@ export default function Contact() {
     subject: "",
     message: "",
   });
+  const[sending, setSending]= useState(false);
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
@@ -33,6 +35,7 @@ export default function Contact() {
   };
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+     setSending(true);
     console.log(import.meta.env);
     console.log(import.meta.env.VITE_API_URL);
 
@@ -55,6 +58,8 @@ export default function Contact() {
     } catch (error) {
       console.error(error);
       alert("Something went wrong!");
+    } finally{
+      setSending(false);
     }
   };
   return (
@@ -224,8 +229,10 @@ export default function Contact() {
                 </div>
               </div>
               <div className="btnContainer">
-                <button type="submit" className="sendButton">
-                  Send Message <FaPaperPlane />
+                <button type="submit" className="sendButton" disabled={sending}>
+                  {sending ? "Sending..." : "Send Message"}{
+                    !sending&& <FaPaperPlane/>
+                  }
                 </button>
               </div>
             </form>
