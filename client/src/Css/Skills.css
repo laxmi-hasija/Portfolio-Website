@@ -123,3 +123,22 @@ color: #2563EB
   font-size: 1.5rem;
   color: #1D4ED8;
 }
+@media(max-width:787px) {
+  .skills{
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .skillFooter{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap:1rem;
+  }
+  
+}
+@media (max-width: 480px) {
+  .skill{
+    margin: 0.75rem;
+    padding:0.75rem;
+  }
+}

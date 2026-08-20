@@ -201,6 +201,7 @@ font-weight:600;
 }
 
 @media (max-width: 1200px) {
+  
   .profileImageAndInfo {
     padding: 1rem 1.5rem;
     flex-direction: column;
