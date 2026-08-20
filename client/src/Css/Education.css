@@ -257,3 +257,16 @@ color:white;
 .computerscience{
   color: #1e293b;
 font-size: 1.3rem;}
+@media(max-width:979px){
+.timeline::before{
+  display: none;
+}
+.timelineDot{
+  display: none;
+}
+}
+@media(max-width:872px){
+  .highlightSection{
+    display: none;
+  }
+}

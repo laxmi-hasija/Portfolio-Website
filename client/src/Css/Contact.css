@@ -192,6 +192,9 @@ textarea::placeholder {
 .contact-info p{
   display: none;
 }
+.Contact .mainSubheading{
+    font-size: 1rem;
+  }
 
 }
 @media(max-width:1256px) {

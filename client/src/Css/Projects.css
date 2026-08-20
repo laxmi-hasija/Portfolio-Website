@@ -156,4 +156,94 @@ height: 14rem;
     gap:0.5rem;
     margin:1rem;
   }
+  .mainsubHeading{
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 600px) {
+
+  .projects {
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .projectContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    box-sizing: border-box;
+  }
+
+  .project {
+    width: 100%;
+    max-width: 450px;
+    min-width: 0;
+
+    margin: 0;
+    padding: 0.5rem;
+
+    box-sizing: border-box;
+  }
+
+  .projectImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .cardHeadingContainer {
+    width: 100%;
+    margin: 0.8rem 0.3rem;
+    box-sizing: border-box;
+  }
+
+  .cardHeadingContainer p {
+    min-width: 0;
+    max-width: 100%;
+
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+
+    overflow-wrap: break-word;
+  }
+
+  .technologiesUsed {
+    width: 100%;
+    margin: 1rem 0;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 0.6rem;
+
+    box-sizing: border-box;
+  }
+
+  .projects .btns {
+    width: 100%;
+    margin: 1rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 0.8rem;
+
+    box-sizing: border-box;
+  }
+
+  .projects .btn {
+    flex: 1;
+    min-width: 0;
+
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+
+    box-sizing: border-box;
+  }
 }
