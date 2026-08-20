@@ -24,8 +24,8 @@ export default function Aboutme() {
         </div>
         <div className="profileImageAndInfo">
           <div className="leftCard">
-            {" "}
-            <img
+            <div className="photoContainer">
+                 <img
               src={profilephoto}
               alt="profilephoto"
               className="profilePhoto"
@@ -54,6 +54,8 @@ export default function Aboutme() {
                 Download CV
                 <HiArrowDownTray className="btnIcon" />
               </a>
+            </div>
+         
           </div>
           <div className="rightCard">
             <h2>Hello, I'm Laxmi&nbsp;👋</h2>

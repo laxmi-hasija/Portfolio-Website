@@ -26,10 +26,14 @@ color: #64748B;
 
 }
 .profilePhoto{
-  min-width: 250px;
+width: 90%;
+height:auto;
+margin: auto;
+max-width:25rem;
+display: block;
 }
-.leftCard{
-  width:35%;
+.photoContainer{
+
 background-color: #f8fafc ;
 
 padding: 1.5rem 2rem;
@@ -42,8 +46,7 @@ border: 1px solid #E2E8F0;
 
 }
 .about .profilePhoto{
-max-width:14rem;
-height: 17rem;
+
 border-radius: 12px;
 }
 .about .imageContainer{
@@ -186,18 +189,100 @@ font-weight:600;
 .about .bottomcardIcon{
  font-size: 2rem;
 }
-@media(max-width:1250px){
-  .profileImageAndInfo{
-    gap:3rem;
-    padding:1.5rem 2rem;
+@media (max-width: 1250px) {
+  .profileImageAndInfo {
+    gap: 3rem;
+    padding: 1.5rem 2rem;
   }
-  .innerCard{
-    padding:12px 22px;
+
+  .innerCard {
+    padding: 12px 22px;
   }
-  
 }
-@media(max-width:1200px){
- .profileImageAndInfo{
-  padding:1rem 1.5rem;
- }
+
+@media (max-width: 1200px) {
+  .profileImageAndInfo {
+    padding: 1rem 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .leftCard {
+    margin: auto;
+    min-width: 0;
+    width: 100%;
+    max-width: 33rem;
+  }
+}
+
+@media (max-width: 786px) {
+  .about {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .about .headingContainer p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .profileImageAndInfo {
+    padding: 1rem 0;
+    gap: 1.5rem;
+  }
+
+  .leftCard {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .rightCard {
+    padding: 1.5rem;
+  }
+
+  .bottomcards {
+    flex-direction: column;
+  }
+
+  .gridContainer {
+    margin: 1rem 0;
+  }
+
+  .about .grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .innerCard {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .resumeBtn {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    margin: 0.75rem;
+    padding: 0.75rem;
+  }
+
+  .profileImageAndInfo {
+    gap: 1rem;
+  }
+
+  .photoContainer {
+    padding: 1rem;
+  }
+
+  .rightCard {
+    padding: 1.25rem;
+  }
+
+  .innerCard {
+    padding: 12px 16px;
+  }
 }
