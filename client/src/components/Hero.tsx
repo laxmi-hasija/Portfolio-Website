@@ -30,6 +30,18 @@ function Hero() {
             Hello, I'm <span className="wave">👋</span>{" "}
           </h3>
           <h1 className="name">Laxmi</h1>
+          <div className="heroPhoto heroUpperImage">
+            <div className="imageContainer">
+               <img src={laxmiphoto}></img>
+               <div className="floatingCard">
+              <p>< HiBriefcase/></p>
+            <p className="title">Open to Internships</p>
+        <p className="subTitle"><GoDotFill/> Available Now</p>
+          </div>
+            </div>
+           
+
+          </div>
           <h2 className="introHeading">MERN Stack Developer</h2>
           <p className="introDescription">
           Passionate MERN Stack Developer building responsive and scalable web applications. I enjoy creating clean user experiences, solving real-world problems, and continuously learning modern technologies.
@@ -93,7 +105,7 @@ function Hero() {
             </a>
           </div>
         </div>
-        <div className="heroRight">
+        <div className="heroRight heroPhoto">
            <div className="imageContainer">
         
           <img src={laxmiphoto} alt="profile photo">

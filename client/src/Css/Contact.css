@@ -195,7 +195,10 @@ textarea::placeholder {
 .Contact .mainSubheading{
     font-size: 1rem;
   }
-
+.FormCard .formElement input,
+textarea {
+  font-size:0.7rem;
+}
 }
 @media(max-width:1256px) {
   .nameAndEmail{
