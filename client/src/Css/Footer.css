@@ -23,6 +23,7 @@
   display: flex;
   gap: 1.5rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .socialbtn{
@@ -45,4 +46,21 @@
     margin-top: 0.5rem;
   padding-top: 1rem;
 ;
+}
+@media (max-width: 500px) {
+  .footer {
+    padding: 1.5rem 0.75rem 1rem;
+  }
+
+  .navlinks {
+    gap: 0.8rem 1.2rem;
+  }
+
+  .socialbtn {
+    gap: 1.2rem;
+  }
+
+  .footerbottom {
+    width: 100%;
+  }
 }

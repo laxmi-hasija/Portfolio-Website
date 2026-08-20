@@ -190,6 +190,9 @@ font-weight:600;
  font-size: 2rem;
 }
 @media (max-width: 1250px) {
+  .about{
+        margin: 1rem 3rem;
+  }
   .profileImageAndInfo {
     gap: 3rem;
     padding: 1.5rem 2rem;
