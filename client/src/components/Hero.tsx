@@ -50,7 +50,7 @@ function Hero() {
         
               <a href="#contact" className="primaryBtn btn">Get in Touch<HiArrowRight className="btnIcon"/></a>
       
-              <a href="/laxmi_resume.pdf" className="secondaryBtn btn">Download CV<HiArrowDownTray className="btnIcon"/></a>
+              <a href="/laxmi_resume.pdf" download="laxmi_resume.pdf" className="secondaryBtn btn">Download CV<HiArrowDownTray className="btnIcon"/></a>
          
           </div>
           <div className="techStackChips">
