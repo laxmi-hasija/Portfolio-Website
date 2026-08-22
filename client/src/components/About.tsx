@@ -50,7 +50,7 @@ export default function Aboutme() {
 
             
             </div>
-              <a href="client\public\laxmi_resume.pdf" download="laxmi_resume.pdf" className="resumeBtn">
+              <a href="\laxmi_resume.pdf" download="laxmi_resume.pdf" className="resumeBtn">
                 Download CV
                 <HiArrowDownTray className="btnIcon" />
               </a>
